@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FDD5EE7139A885AA86C5472 /* Pods_Meek_MVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD249C24115C28B33EA174C8 /* Pods_Meek_MVPUITests.framework */; };
+		36A919F42D8480A6C6FC7F07 /* Pods_Meek_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD807E683EF20DBF129A0F8 /* Pods_Meek_MVP.framework */; };
+		493DA7D41F298520002B7753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA7D31F298520002B7753 /* AppDelegate.swift */; };
+		493DA7D91F298520002B7753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493DA7D71F298520002B7753 /* Main.storyboard */; };
+		493DA7DB1F298520002B7753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493DA7DA1F298520002B7753 /* Assets.xcassets */; };
+		493DA7DE1F298520002B7753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493DA7DC1F298520002B7753 /* LaunchScreen.storyboard */; };
+		493DA7E91F298520002B7753 /* Meek_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA7E81F298520002B7753 /* Meek_MVPTests.swift */; };
+		493DA7F41F298521002B7753 /* Meek_MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA7F31F298520002B7753 /* Meek_MVPUITests.swift */; };
+		493DA8021F29853B002B7753 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA8011F29853B002B7753 /* TabVC.swift */; };
+		493DA8041F298546002B7753 /* ResponsesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA8031F298546002B7753 /* ResponsesVC.swift */; };
+		493DA8061F298552002B7753 /* QuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA8051F298552002B7753 /* QuestionsVC.swift */; };
+		493DA8081F298684002B7753 /* ResponsesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA8071F298684002B7753 /* ResponsesCell.swift */; };
+		493DA80A1F298691002B7753 /* ResponsesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493DA8091F298691002B7753 /* ResponsesCell.xib */; };
+		493DA80C1F2992D8002B7753 /* QuestionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493DA80B1F2992D8002B7753 /* QuestionsCell.xib */; };
+		493DA80E1F2992E3002B7753 /* QuestionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA80D1F2992E3002B7753 /* QuestionsCell.swift */; };
+		493DA8101F2996BA002B7753 /* PostQuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493DA80F1F2996BA002B7753 /* PostQuestionsVC.swift */; };
+		49510DDC1F36D7D700913E76 /* BlankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49510DDA1F36D7D700913E76 /* BlankCell.swift */; };
+		49510DDD1F36D7D700913E76 /* BlankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49510DDB1F36D7D700913E76 /* BlankCell.xib */; };
+		49510DDF1F3A680100913E76 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49510DDE1F3A680100913E76 /* CustomCollectionViewCell.swift */; };
+		49510DE41F3A682A00913E76 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49510DE11F3A682A00913E76 /* Info.plist */; };
+		49510DE51F3A682A00913E76 /* PagedHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49510DE31F3A682A00913E76 /* PagedHorizontalView.swift */; };
+		49535EDD1F2D489100134BE1 /* PasscodeLock.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49535EC71F2D489100134BE1 /* PasscodeLock.strings */; };
+		49535EDE1F2D489100134BE1 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EC91F2D489100134BE1 /* Functions.swift */; };
+		49535EE11F2D489100134BE1 /* ConfirmPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ECD1F2D489100134BE1 /* ConfirmPasscodeState.swift */; };
+		49535EE21F2D489100134BE1 /* EnterPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ECE1F2D489100134BE1 /* EnterPasscodeState.swift */; };
+		49535EE31F2D489100134BE1 /* PasscodeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ECF1F2D489100134BE1 /* PasscodeLock.swift */; };
+		49535EE41F2D489100134BE1 /* SetPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ED01F2D489100134BE1 /* SetPasscodeState.swift */; };
+		49535EE51F2D489100134BE1 /* PasscodeLockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ED21F2D489100134BE1 /* PasscodeLockPresenter.swift */; };
+		49535EE71F2D489100134BE1 /* PasscodeLockConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ED51F2D489100134BE1 /* PasscodeLockConfigurationType.swift */; };
+		49535EE81F2D489100134BE1 /* PasscodeLockStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ED61F2D489100134BE1 /* PasscodeLockStateType.swift */; };
+		49535EE91F2D489100134BE1 /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ED71F2D489100134BE1 /* PasscodeLockType.swift */; };
+		49535EEA1F2D489100134BE1 /* PasscodeRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535ED81F2D489100134BE1 /* PasscodeRepositoryType.swift */; };
+		49535EEB1F2D489100134BE1 /* PasscodeLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49535EDA1F2D489100134BE1 /* PasscodeLockView.xib */; };
+		49535EEC1F2D489100134BE1 /* PasscodeSignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EDB1F2D489100134BE1 /* PasscodeSignButton.swift */; };
+		49535EED1F2D489100134BE1 /* PasscodeSignPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EDC1F2D489100134BE1 /* PasscodeSignPlaceholderView.swift */; };
+		49535EEF1F2D493600134BE1 /* PasscodeLockConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EEE1F2D493600134BE1 /* PasscodeLockConfiguration.swift */; };
+		49535EF11F2D493C00134BE1 /* UserDefaultsPasscodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EF01F2D493C00134BE1 /* UserDefaultsPasscodeRepository.swift */; };
+		49535EF31F2D4EBF00134BE1 /* PasscodeLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EF21F2D4EBF00134BE1 /* PasscodeLockViewController.swift */; };
+		49535EF91F2D7DDF00134BE1 /* ConfirmationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49535EF81F2D7DDF00134BE1 /* ConfirmationScreen.xib */; };
+		49535EFB1F2D812600134BE1 /* ConfirmationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EFA1F2D812600134BE1 /* ConfirmationScreen.swift */; };
+		49535EFD1F2E171800134BE1 /* PickMeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EFC1F2E171700134BE1 /* PickMeekVC.swift */; };
+		49535EFF1F2E172700134BE1 /* MeekResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49535EFE1F2E172700134BE1 /* MeekResultVC.swift */; };
+		750242811F31313A007B5FD4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750242801F31313A007B5FD4 /* DataManager.swift */; };
+		750242841F313378007B5FD4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750242831F313378007B5FD4 /* Question.swift */; };
+		750242871F3136FE007B5FD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 750242861F3136FE007B5FD4 /* GoogleService-Info.plist */; };
+		7514BE4F1F41FFF600682F40 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7514BE4E1F41FFF600682F40 /* Chat.swift */; };
+		7514BE511F4200A700682F40 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7514BE501F4200A700682F40 /* Message.swift */; };
+		7536DDD31F426479006AA8BB /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536DDD21F426479006AA8BB /* ChatCell.swift */; };
+		7536DDD51F4264BE006AA8BB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536DDD41F4264BE006AA8BB /* ChatVC.swift */; };
+		756F76911F37D67F004CE390 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F76901F37D67F004CE390 /* User.swift */; };
+		756F76931F37D887004CE390 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756F76921F37D887004CE390 /* Constants.swift */; };
+		B0F4021365DA1811336295E8 /* Pods_Meek_MVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9AD79B5B4A36FA1B25DB63 /* Pods_Meek_MVPTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		493DA7E51F298520002B7753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493DA7C81F298520002B7753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493DA7CF1F298520002B7753;
+			remoteInfo = Meek_MVP;
+		};
+		493DA7F01F298520002B7753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493DA7C81F298520002B7753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493DA7CF1F298520002B7753;
+			remoteInfo = Meek_MVP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41F423D961CF03209D5A7248 /* Pods-Meek_MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meek_MVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meek_MVP/Pods-Meek_MVP.debug.xcconfig"; sourceTree = "<group>"; };
+		43C8B9DD2D59A69D8785EB48 /* Pods-Meek_MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meek_MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meek_MVP/Pods-Meek_MVP.release.xcconfig"; sourceTree = "<group>"; };
+		493DA7D01F298520002B7753 /* Meek_MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meek_MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		493DA7D31F298520002B7753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		493DA7D81F298520002B7753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		493DA7DA1F298520002B7753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		493DA7DD1F298520002B7753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		493DA7DF1F298520002B7753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493DA7E41F298520002B7753 /* Meek_MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meek_MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		493DA7E81F298520002B7753 /* Meek_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meek_MVPTests.swift; sourceTree = "<group>"; };
+		493DA7EA1F298520002B7753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493DA7EF1F298520002B7753 /* Meek_MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Meek_MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		493DA7F31F298520002B7753 /* Meek_MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meek_MVPUITests.swift; sourceTree = "<group>"; };
+		493DA7F51F298521002B7753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493DA8011F29853B002B7753 /* TabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		493DA8031F298546002B7753 /* ResponsesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsesVC.swift; sourceTree = "<group>"; };
+		493DA8051F298552002B7753 /* QuestionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsVC.swift; sourceTree = "<group>"; };
+		493DA8071F298684002B7753 /* ResponsesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsesCell.swift; sourceTree = "<group>"; };
+		493DA8091F298691002B7753 /* ResponsesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResponsesCell.xib; sourceTree = "<group>"; };
+		493DA80B1F2992D8002B7753 /* QuestionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsCell.xib; sourceTree = "<group>"; };
+		493DA80D1F2992E3002B7753 /* QuestionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsCell.swift; sourceTree = "<group>"; };
+		493DA80F1F2996BA002B7753 /* PostQuestionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostQuestionsVC.swift; sourceTree = "<group>"; };
+		49510DDA1F36D7D700913E76 /* BlankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankCell.swift; sourceTree = "<group>"; };
+		49510DDB1F36D7D700913E76 /* BlankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlankCell.xib; sourceTree = "<group>"; };
+		49510DDE1F3A680100913E76 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		49510DE11F3A682A00913E76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49510DE21F3A682A00913E76 /* PagedHorizontalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagedHorizontalView.h; sourceTree = "<group>"; };
+		49510DE31F3A682A00913E76 /* PagedHorizontalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedHorizontalView.swift; sourceTree = "<group>"; };
+		49535EC81F2D489100134BE1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
+		49535EC91F2D489100134BE1 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		49535ECD1F2D489100134BE1 /* ConfirmPasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPasscodeState.swift; sourceTree = "<group>"; };
+		49535ECE1F2D489100134BE1 /* EnterPasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPasscodeState.swift; sourceTree = "<group>"; };
+		49535ECF1F2D489100134BE1 /* PasscodeLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLock.swift; sourceTree = "<group>"; };
+		49535ED01F2D489100134BE1 /* SetPasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasscodeState.swift; sourceTree = "<group>"; };
+		49535ED21F2D489100134BE1 /* PasscodeLockPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockPresenter.swift; sourceTree = "<group>"; };
+		49535ED51F2D489100134BE1 /* PasscodeLockConfigurationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockConfigurationType.swift; sourceTree = "<group>"; };
+		49535ED61F2D489100134BE1 /* PasscodeLockStateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockStateType.swift; sourceTree = "<group>"; };
+		49535ED71F2D489100134BE1 /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
+		49535ED81F2D489100134BE1 /* PasscodeRepositoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeRepositoryType.swift; sourceTree = "<group>"; };
+		49535EDA1F2D489100134BE1 /* PasscodeLockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasscodeLockView.xib; sourceTree = "<group>"; };
+		49535EDB1F2D489100134BE1 /* PasscodeSignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSignButton.swift; sourceTree = "<group>"; };
+		49535EDC1F2D489100134BE1 /* PasscodeSignPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSignPlaceholderView.swift; sourceTree = "<group>"; };
+		49535EEE1F2D493600134BE1 /* PasscodeLockConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeLockConfiguration.swift; path = Meek_MVP/PasscodeLockConfiguration.swift; sourceTree = SOURCE_ROOT; };
+		49535EF01F2D493C00134BE1 /* UserDefaultsPasscodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsPasscodeRepository.swift; path = ../UserDefaultsPasscodeRepository.swift; sourceTree = "<group>"; };
+		49535EF21F2D4EBF00134BE1 /* PasscodeLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeLockViewController.swift; path = PasscodeLock/PasscodeLockViewController.swift; sourceTree = "<group>"; };
+		49535EF81F2D7DDF00134BE1 /* ConfirmationScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationScreen.xib; sourceTree = "<group>"; };
+		49535EFA1F2D812600134BE1 /* ConfirmationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationScreen.swift; sourceTree = "<group>"; };
+		49535EFC1F2E171700134BE1 /* PickMeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickMeekVC.swift; sourceTree = "<group>"; };
+		49535EFE1F2E172700134BE1 /* MeekResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeekResultVC.swift; sourceTree = "<group>"; };
+		4BDB9F84D1A9D95BA8CD58EA /* Pods-Meek_MVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meek_MVPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meek_MVPUITests/Pods-Meek_MVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52D297B2E8E85E010C52B5D8 /* Pods-Meek_MVPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meek_MVPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meek_MVPUITests/Pods-Meek_MVPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5BC6D2CB41101FF9E2961AE8 /* Pods-Meek_MVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meek_MVPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meek_MVPTests/Pods-Meek_MVPTests.release.xcconfig"; sourceTree = "<group>"; };
+		750242801F31313A007B5FD4 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Services/DataManager.swift; sourceTree = "<group>"; };
+		750242831F313378007B5FD4 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
+		750242861F3136FE007B5FD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7514BE4E1F41FFF600682F40 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		7514BE501F4200A700682F40 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7536DDD21F426479006AA8BB /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		7536DDD41F4264BE006AA8BB /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		756F76901F37D67F004CE390 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		756F76921F37D887004CE390 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "Meek_MVP/Supporting Files/Constants.swift"; sourceTree = SOURCE_ROOT; };
+		8BD807E683EF20DBF129A0F8 /* Pods_Meek_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meek_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE9DD1A86932AC1DDA5E421 /* Pods-Meek_MVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meek_MVPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Meek_MVPTests/Pods-Meek_MVPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD249C24115C28B33EA174C8 /* Pods_Meek_MVPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meek_MVPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9AD79B5B4A36FA1B25DB63 /* Pods_Meek_MVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meek_MVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		493DA7CD1F298520002B7753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A919F42D8480A6C6FC7F07 /* Pods_Meek_MVP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493DA7E11F298520002B7753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F4021365DA1811336295E8 /* Pods_Meek_MVPTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493DA7EC1F298520002B7753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDD5EE7139A885AA86C5472 /* Pods_Meek_MVPUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493DA7C71F298520002B7753 = {
+			isa = PBXGroup;
+			children = (
+				493DA7D21F298520002B7753 /* Meek_MVP */,
+				493DA7E71F298520002B7753 /* Meek_MVPTests */,
+				493DA7F21F298520002B7753 /* Meek_MVPUITests */,
+				493DA7D11F298520002B7753 /* Products */,
+				A13F172D28A7A92312AF2BFE /* Pods */,
+				C8305D33628BF3D53DD9406C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		493DA7D11F298520002B7753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				493DA7D01F298520002B7753 /* Meek_MVP.app */,
+				493DA7E41F298520002B7753 /* Meek_MVPTests.xctest */,
+				493DA7EF1F298520002B7753 /* Meek_MVPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493DA7D21F298520002B7753 /* Meek_MVP */ = {
+			isa = PBXGroup;
+			children = (
+				49510DE01F3A682A00913E76 /* PagedHorizontalView */,
+				756F76941F37D8A4004CE390 /* Supporting Files */,
+				49535EC61F2D489100134BE1 /* PasscodeLock */,
+				493DA7D31F298520002B7753 /* AppDelegate.swift */,
+				493DA7D71F298520002B7753 /* Main.storyboard */,
+				493DA7DA1F298520002B7753 /* Assets.xcassets */,
+				493DA7DC1F298520002B7753 /* LaunchScreen.storyboard */,
+				493DA7DF1F298520002B7753 /* Info.plist */,
+				493DA8011F29853B002B7753 /* TabVC.swift */,
+				493DA80F1F2996BA002B7753 /* PostQuestionsVC.swift */,
+				49510DDE1F3A680100913E76 /* CustomCollectionViewCell.swift */,
+				493DA80D1F2992E3002B7753 /* QuestionsCell.swift */,
+				493DA80B1F2992D8002B7753 /* QuestionsCell.xib */,
+				493DA8051F298552002B7753 /* QuestionsVC.swift */,
+				493DA8071F298684002B7753 /* ResponsesCell.swift */,
+				493DA8091F298691002B7753 /* ResponsesCell.xib */,
+				493DA8031F298546002B7753 /* ResponsesVC.swift */,
+				49535EF81F2D7DDF00134BE1 /* ConfirmationScreen.xib */,
+				49535EFA1F2D812600134BE1 /* ConfirmationScreen.swift */,
+				49535EFC1F2E171700134BE1 /* PickMeekVC.swift */,
+				49535EFE1F2E172700134BE1 /* MeekResultVC.swift */,
+				7536DDD21F426479006AA8BB /* ChatCell.swift */,
+				7536DDD41F4264BE006AA8BB /* ChatVC.swift */,
+				49510DDA1F36D7D700913E76 /* BlankCell.swift */,
+				49510DDB1F36D7D700913E76 /* BlankCell.xib */,
+				750242821F31335F007B5FD4 /* Services */,
+				750242851F313387007B5FD4 /* Models */,
+			);
+			path = Meek_MVP;
+			sourceTree = "<group>";
+		};
+		493DA7E71F298520002B7753 /* Meek_MVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				493DA7E81F298520002B7753 /* Meek_MVPTests.swift */,
+				493DA7EA1F298520002B7753 /* Info.plist */,
+			);
+			path = Meek_MVPTests;
+			sourceTree = "<group>";
+		};
+		493DA7F21F298520002B7753 /* Meek_MVPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				493DA7F31F298520002B7753 /* Meek_MVPUITests.swift */,
+				493DA7F51F298521002B7753 /* Info.plist */,
+			);
+			path = Meek_MVPUITests;
+			sourceTree = "<group>";
+		};
+		49510DE01F3A682A00913E76 /* PagedHorizontalView */ = {
+			isa = PBXGroup;
+			children = (
+				49510DE11F3A682A00913E76 /* Info.plist */,
+				49510DE21F3A682A00913E76 /* PagedHorizontalView.h */,
+				49510DE31F3A682A00913E76 /* PagedHorizontalView.swift */,
+			);
+			path = PagedHorizontalView;
+			sourceTree = "<group>";
+		};
+		49535EC61F2D489100134BE1 /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				49535EEE1F2D493600134BE1 /* PasscodeLockConfiguration.swift */,
+				49535EF01F2D493C00134BE1 /* UserDefaultsPasscodeRepository.swift */,
+				49535EC71F2D489100134BE1 /* PasscodeLock.strings */,
+				49535EC91F2D489100134BE1 /* Functions.swift */,
+				49535ECB1F2D489100134BE1 /* PasscodeLock */,
+				49535ED21F2D489100134BE1 /* PasscodeLockPresenter.swift */,
+				49535EF21F2D4EBF00134BE1 /* PasscodeLockViewController.swift */,
+				49535ED41F2D489100134BE1 /* Protocols */,
+				49535ED91F2D489100134BE1 /* Views */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		49535ECB1F2D489100134BE1 /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				49535ECD1F2D489100134BE1 /* ConfirmPasscodeState.swift */,
+				49535ECE1F2D489100134BE1 /* EnterPasscodeState.swift */,
+				49535ECF1F2D489100134BE1 /* PasscodeLock.swift */,
+				49535ED01F2D489100134BE1 /* SetPasscodeState.swift */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		49535ED41F2D489100134BE1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49535ED51F2D489100134BE1 /* PasscodeLockConfigurationType.swift */,
+				49535ED61F2D489100134BE1 /* PasscodeLockStateType.swift */,
+				49535ED71F2D489100134BE1 /* PasscodeLockType.swift */,
+				49535ED81F2D489100134BE1 /* PasscodeRepositoryType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		49535ED91F2D489100134BE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49535EDA1F2D489100134BE1 /* PasscodeLockView.xib */,
+				49535EDB1F2D489100134BE1 /* PasscodeSignButton.swift */,
+				49535EDC1F2D489100134BE1 /* PasscodeSignPlaceholderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		750242821F31335F007B5FD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				750242861F3136FE007B5FD4 /* GoogleService-Info.plist */,
+				750242801F31313A007B5FD4 /* DataManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		750242851F313387007B5FD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				750242831F313378007B5FD4 /* Question.swift */,
+				756F76901F37D67F004CE390 /* User.swift */,
+				7514BE4E1F41FFF600682F40 /* Chat.swift */,
+				7514BE501F4200A700682F40 /* Message.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		756F76941F37D8A4004CE390 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				756F76921F37D887004CE390 /* Constants.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A13F172D28A7A92312AF2BFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41F423D961CF03209D5A7248 /* Pods-Meek_MVP.debug.xcconfig */,
+				43C8B9DD2D59A69D8785EB48 /* Pods-Meek_MVP.release.xcconfig */,
+				9FE9DD1A86932AC1DDA5E421 /* Pods-Meek_MVPTests.debug.xcconfig */,
+				5BC6D2CB41101FF9E2961AE8 /* Pods-Meek_MVPTests.release.xcconfig */,
+				4BDB9F84D1A9D95BA8CD58EA /* Pods-Meek_MVPUITests.debug.xcconfig */,
+				52D297B2E8E85E010C52B5D8 /* Pods-Meek_MVPUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8305D33628BF3D53DD9406C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BD807E683EF20DBF129A0F8 /* Pods_Meek_MVP.framework */,
+				DE9AD79B5B4A36FA1B25DB63 /* Pods_Meek_MVPTests.framework */,
+				CD249C24115C28B33EA174C8 /* Pods_Meek_MVPUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493DA7CF1F298520002B7753 /* Meek_MVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493DA7F81F298521002B7753 /* Build configuration list for PBXNativeTarget "Meek_MVP" */;
+			buildPhases = (
+				2A75FA4216314C181FA46480 /* [CP] Check Pods Manifest.lock */,
+				493DA7CC1F298520002B7753 /* Sources */,
+				493DA7CD1F298520002B7753 /* Frameworks */,
+				493DA7CE1F298520002B7753 /* Resources */,
+				271AE464B77C6676E03EE6A5 /* [CP] Embed Pods Frameworks */,
+				00C58FE28172B06D462DEAFE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meek_MVP;
+			productName = Meek_MVP;
+			productReference = 493DA7D01F298520002B7753 /* Meek_MVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		493DA7E31F298520002B7753 /* Meek_MVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493DA7FB1F298521002B7753 /* Build configuration list for PBXNativeTarget "Meek_MVPTests" */;
+			buildPhases = (
+				C53B94EEA13AE59A0E05CDA5 /* [CP] Check Pods Manifest.lock */,
+				493DA7E01F298520002B7753 /* Sources */,
+				493DA7E11F298520002B7753 /* Frameworks */,
+				493DA7E21F298520002B7753 /* Resources */,
+				3291ECDE5CA4A374522A1B71 /* [CP] Embed Pods Frameworks */,
+				A44C41AC20CD78EFAEF702FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493DA7E61F298520002B7753 /* PBXTargetDependency */,
+			);
+			name = Meek_MVPTests;
+			productName = Meek_MVPTests;
+			productReference = 493DA7E41F298520002B7753 /* Meek_MVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		493DA7EE1F298520002B7753 /* Meek_MVPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493DA7FE1F298521002B7753 /* Build configuration list for PBXNativeTarget "Meek_MVPUITests" */;
+			buildPhases = (
+				CF06F243D67E5C1CCE229858 /* [CP] Check Pods Manifest.lock */,
+				493DA7EB1F298520002B7753 /* Sources */,
+				493DA7EC1F298520002B7753 /* Frameworks */,
+				493DA7ED1F298520002B7753 /* Resources */,
+				C503EDB11331F283494B065B /* [CP] Embed Pods Frameworks */,
+				6D59BED2F3C96FFBA568D99D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493DA7F11F298520002B7753 /* PBXTargetDependency */,
+			);
+			name = Meek_MVPUITests;
+			productName = Meek_MVPUITests;
+			productReference = 493DA7EF1F298520002B7753 /* Meek_MVPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		493DA7C81F298520002B7753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Duvelop;
+				TargetAttributes = {
+					493DA7CF1F298520002B7753 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 865U953KNG;
+						ProvisioningStyle = Automatic;
+					};
+					493DA7E31F298520002B7753 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 493DA7CF1F298520002B7753;
+					};
+					493DA7EE1F298520002B7753 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 493DA7CF1F298520002B7753;
+					};
+				};
+			};
+			buildConfigurationList = 493DA7CB1F298520002B7753 /* Build configuration list for PBXProject "Meek_MVP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 493DA7C71F298520002B7753;
+			productRefGroup = 493DA7D11F298520002B7753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493DA7CF1F298520002B7753 /* Meek_MVP */,
+				493DA7E31F298520002B7753 /* Meek_MVPTests */,
+				493DA7EE1F298520002B7753 /* Meek_MVPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493DA7CE1F298520002B7753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49535EF91F2D7DDF00134BE1 /* ConfirmationScreen.xib in Resources */,
+				750242871F3136FE007B5FD4 /* GoogleService-Info.plist in Resources */,
+				49510DDD1F36D7D700913E76 /* BlankCell.xib in Resources */,
+				493DA80A1F298691002B7753 /* ResponsesCell.xib in Resources */,
+				493DA80C1F2992D8002B7753 /* QuestionsCell.xib in Resources */,
+				493DA7DE1F298520002B7753 /* LaunchScreen.storyboard in Resources */,
+				49535EEB1F2D489100134BE1 /* PasscodeLockView.xib in Resources */,
+				49535EDD1F2D489100134BE1 /* PasscodeLock.strings in Resources */,
+				49510DE41F3A682A00913E76 /* Info.plist in Resources */,
+				493DA7DB1F298520002B7753 /* Assets.xcassets in Resources */,
+				493DA7D91F298520002B7753 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493DA7E21F298520002B7753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493DA7ED1F298520002B7753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C58FE28172B06D462DEAFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meek_MVP/Pods-Meek_MVP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		271AE464B77C6676E03EE6A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meek_MVP/Pods-Meek_MVP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A75FA4216314C181FA46480 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3291ECDE5CA4A374522A1B71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meek_MVPTests/Pods-Meek_MVPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D59BED2F3C96FFBA568D99D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meek_MVPUITests/Pods-Meek_MVPUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44C41AC20CD78EFAEF702FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meek_MVPTests/Pods-Meek_MVPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C503EDB11331F283494B065B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Meek_MVPUITests/Pods-Meek_MVPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53B94EEA13AE59A0E05CDA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF06F243D67E5C1CCE229858 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		493DA7CC1F298520002B7753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7536DDD51F4264BE006AA8BB /* ChatVC.swift in Sources */,
+				49535EE31F2D489100134BE1 /* PasscodeLock.swift in Sources */,
+				49535EFD1F2E171800134BE1 /* PickMeekVC.swift in Sources */,
+				49535EF31F2D4EBF00134BE1 /* PasscodeLockViewController.swift in Sources */,
+				7514BE511F4200A700682F40 /* Message.swift in Sources */,
+				49535EE71F2D489100134BE1 /* PasscodeLockConfigurationType.swift in Sources */,
+				493DA8081F298684002B7753 /* ResponsesCell.swift in Sources */,
+				49510DDF1F3A680100913E76 /* CustomCollectionViewCell.swift in Sources */,
+				756F76931F37D887004CE390 /* Constants.swift in Sources */,
+				49535EE81F2D489100134BE1 /* PasscodeLockStateType.swift in Sources */,
+				49535EF11F2D493C00134BE1 /* UserDefaultsPasscodeRepository.swift in Sources */,
+				493DA80E1F2992E3002B7753 /* QuestionsCell.swift in Sources */,
+				756F76911F37D67F004CE390 /* User.swift in Sources */,
+				49535EE91F2D489100134BE1 /* PasscodeLockType.swift in Sources */,
+				49535EDE1F2D489100134BE1 /* Functions.swift in Sources */,
+				493DA8101F2996BA002B7753 /* PostQuestionsVC.swift in Sources */,
+				750242811F31313A007B5FD4 /* DataManager.swift in Sources */,
+				493DA8021F29853B002B7753 /* TabVC.swift in Sources */,
+				49535EFF1F2E172700134BE1 /* MeekResultVC.swift in Sources */,
+				7536DDD31F426479006AA8BB /* ChatCell.swift in Sources */,
+				49535EFB1F2D812600134BE1 /* ConfirmationScreen.swift in Sources */,
+				493DA8061F298552002B7753 /* QuestionsVC.swift in Sources */,
+				493DA7D41F298520002B7753 /* AppDelegate.swift in Sources */,
+				49535EEF1F2D493600134BE1 /* PasscodeLockConfiguration.swift in Sources */,
+				49510DDC1F36D7D700913E76 /* BlankCell.swift in Sources */,
+				49535EEA1F2D489100134BE1 /* PasscodeRepositoryType.swift in Sources */,
+				49535EEC1F2D489100134BE1 /* PasscodeSignButton.swift in Sources */,
+				49535EE51F2D489100134BE1 /* PasscodeLockPresenter.swift in Sources */,
+				750242841F313378007B5FD4 /* Question.swift in Sources */,
+				49510DE51F3A682A00913E76 /* PagedHorizontalView.swift in Sources */,
+				49535EE41F2D489100134BE1 /* SetPasscodeState.swift in Sources */,
+				7514BE4F1F41FFF600682F40 /* Chat.swift in Sources */,
+				49535EE21F2D489100134BE1 /* EnterPasscodeState.swift in Sources */,
+				49535EE11F2D489100134BE1 /* ConfirmPasscodeState.swift in Sources */,
+				49535EED1F2D489100134BE1 /* PasscodeSignPlaceholderView.swift in Sources */,
+				493DA8041F298546002B7753 /* ResponsesVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493DA7E01F298520002B7753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493DA7E91F298520002B7753 /* Meek_MVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493DA7EB1F298520002B7753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493DA7F41F298521002B7753 /* Meek_MVPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493DA7E61F298520002B7753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493DA7CF1F298520002B7753 /* Meek_MVP */;
+			targetProxy = 493DA7E51F298520002B7753 /* PBXContainerItemProxy */;
+		};
+		493DA7F11F298520002B7753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493DA7CF1F298520002B7753 /* Meek_MVP */;
+			targetProxy = 493DA7F01F298520002B7753 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		493DA7D71F298520002B7753 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493DA7D81F298520002B7753 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		493DA7DC1F298520002B7753 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493DA7DD1F298520002B7753 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		49535EC71F2D489100134BE1 /* PasscodeLock.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49535EC81F2D489100134BE1 /* en */,
+			);
+			name = PasscodeLock.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		493DA7F61F298521002B7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		493DA7F71F298521002B7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		493DA7F91F298521002B7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F423D961CF03209D5A7248 /* Pods-Meek_MVP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 865U953KNG;
+				INFOPLIST_FILE = Meek_MVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexa.meekmvp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		493DA7FA1F298521002B7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C8B9DD2D59A69D8785EB48 /* Pods-Meek_MVP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 865U953KNG;
+				INFOPLIST_FILE = Meek_MVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexa.meekmvp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		493DA7FC1F298521002B7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE9DD1A86932AC1DDA5E421 /* Pods-Meek_MVPTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Meek_MVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duvelop.Meek-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meek_MVP.app/Meek_MVP";
+			};
+			name = Debug;
+		};
+		493DA7FD1F298521002B7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BC6D2CB41101FF9E2961AE8 /* Pods-Meek_MVPTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Meek_MVPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duvelop.Meek-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meek_MVP.app/Meek_MVP";
+			};
+			name = Release;
+		};
+		493DA7FF1F298521002B7753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDB9F84D1A9D95BA8CD58EA /* Pods-Meek_MVPUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Meek_MVPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duvelop.Meek-MVPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Meek_MVP;
+			};
+			name = Debug;
+		};
+		493DA8001F298521002B7753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D297B2E8E85E010C52B5D8 /* Pods-Meek_MVPUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Meek_MVPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duvelop.Meek-MVPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Meek_MVP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		493DA7CB1F298520002B7753 /* Build configuration list for PBXProject "Meek_MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DA7F61F298521002B7753 /* Debug */,
+				493DA7F71F298521002B7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493DA7F81F298521002B7753 /* Build configuration list for PBXNativeTarget "Meek_MVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DA7F91F298521002B7753 /* Debug */,
+				493DA7FA1F298521002B7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493DA7FB1F298521002B7753 /* Build configuration list for PBXNativeTarget "Meek_MVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DA7FC1F298521002B7753 /* Debug */,
+				493DA7FD1F298521002B7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493DA7FE1F298521002B7753 /* Build configuration list for PBXNativeTarget "Meek_MVPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493DA7FF1F298521002B7753 /* Debug */,
+				493DA8001F298521002B7753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 493DA7C81F298520002B7753 /* Project object */;
+}

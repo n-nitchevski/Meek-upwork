@@ -1,0 +1,6 @@
+framework module Pods_Meek_MVPUITests {
+  umbrella header "Pods-Meek_MVPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
